@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8415C9C22A9DD2FC0053B2F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8415C9C12A9DD2FC0053B2F2 /* AppDelegate.swift */; };
-		8415C9C42A9DD2FC0053B2F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8415C9C32A9DD2FC0053B2F2 /* SceneDelegate.swift */; };
-		8415C9C62A9DD2FC0053B2F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8415C9C52A9DD2FC0053B2F2 /* ViewController.swift */; };
 		8415C9C92A9DD2FC0053B2F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8415C9C72A9DD2FC0053B2F2 /* Main.storyboard */; };
 		8415C9CC2A9DD2FC0053B2F2 /* Dropbox_Media_Viewer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8415C9CA2A9DD2FC0053B2F2 /* Dropbox_Media_Viewer.xcdatamodeld */; };
 		8415C9CE2A9DD3030053B2F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8415C9CD2A9DD3030053B2F2 /* Assets.xcassets */; };
@@ -17,6 +15,29 @@
 		8415C9DC2A9DD3040053B2F2 /* Dropbox_Media_ViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8415C9DB2A9DD3040053B2F2 /* Dropbox_Media_ViewerTests.swift */; };
 		8415C9E62A9DD3040053B2F2 /* Dropbox_Media_ViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8415C9E52A9DD3040053B2F2 /* Dropbox_Media_ViewerUITests.swift */; };
 		8415C9E82A9DD3040053B2F2 /* Dropbox_Media_ViewerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8415C9E72A9DD3040053B2F2 /* Dropbox_Media_ViewerUITestsLaunchTests.swift */; };
+		84A61A4A2A9DD83F000B621B /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A61A492A9DD83F000B621B /* AppConfiguration.swift */; };
+		84A61A512A9DE02D000B621B /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A61A502A9DE02D000B621B /* AuthVC.swift */; };
+		84A61A552A9DE064000B621B /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A61A542A9DE064000B621B /* BaseVC.swift */; };
+		84A61A582A9DE11F000B621B /* BaseTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A61A572A9DE11F000B621B /* BaseTVCell.swift */; };
+		84A61A5B2A9DE154000B621B /* BaseCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A61A5A2A9DE154000B621B /* BaseCVCell.swift */; };
+		84A61A5E2A9DE1AA000B621B /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A61A5D2A9DE1AA000B621B /* MainTabBarController.swift */; };
+		84A61A602A9DE207000B621B /* UIButtonExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A61A5F2A9DE207000B621B /* UIButtonExt.swift */; };
+		84A61A622A9DE24D000B621B /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A61A612A9DE24D000B621B /* UIViewExt.swift */; };
+		84A61A642A9DE2A5000B621B /* IBInspectableExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A61A632A9DE2A5000B621B /* IBInspectableExt.swift */; };
+		84A61A662A9DE48B000B621B /* NotificationExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A61A652A9DE48B000B621B /* NotificationExt.swift */; };
+		84A61A6B2A9DE5B7000B621B /* MediaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A61A6A2A9DE5B7000B621B /* MediaVC.swift */; };
+		84A61A6D2A9DE5CA000B621B /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A61A6C2A9DE5CA000B621B /* ProfileVC.swift */; };
+		84A61A6F2A9DE5DE000B621B /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A61A6E2A9DE5DE000B621B /* SettingsVC.swift */; };
+		84A61A722A9DE663000B621B /* MediaDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A61A712A9DE663000B621B /* MediaDetailsVC.swift */; };
+		84A61A772A9DE798000B621B /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A61A762A9DE798000B621B /* APIManager.swift */; };
+		84A61A792A9DE881000B621B /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A61A782A9DE881000B621B /* CoreDataManager.swift */; };
+		84A61A7B2A9DEC0A000B621B /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A61A7A2A9DEC0A000B621B /* Auth.storyboard */; };
+		84A61A7D2A9DEC31000B621B /* Media.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A61A7C2A9DEC31000B621B /* Media.storyboard */; };
+		84A61A7F2A9DEC49000B621B /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A61A7E2A9DEC49000B621B /* Profile.storyboard */; };
+		84A61A812A9DECDA000B621B /* Popup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A61A802A9DECDA000B621B /* Popup.storyboard */; };
+		8B2F5891F73F98E9A5C69215 /* Pods_Dropbox_Media_Viewer_Dropbox_Media_ViewerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 322861A2EE544F7E7B607052 /* Pods_Dropbox_Media_Viewer_Dropbox_Media_ViewerUITests.framework */; };
+		B59FC73984AE1E2BF61E40AE /* Pods_Dropbox_Media_ViewerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDA62EFBCE0627DEB92B23F /* Pods_Dropbox_Media_ViewerTests.framework */; };
+		D66DC66BE243099B345A3C0C /* Pods_Dropbox_Media_Viewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B50870FE5C5D7F8AA8F47BC /* Pods_Dropbox_Media_Viewer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,20 +58,47 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B13204487779C15B0C6D2F7 /* Pods-Dropbox Media Viewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dropbox Media Viewer.release.xcconfig"; path = "Target Support Files/Pods-Dropbox Media Viewer/Pods-Dropbox Media Viewer.release.xcconfig"; sourceTree = "<group>"; };
+		1AC6659E4F022CE0977C1024 /* Pods-Dropbox Media Viewer-Dropbox Media ViewerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dropbox Media Viewer-Dropbox Media ViewerUITests.release.xcconfig"; path = "Target Support Files/Pods-Dropbox Media Viewer-Dropbox Media ViewerUITests/Pods-Dropbox Media Viewer-Dropbox Media ViewerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2B50870FE5C5D7F8AA8F47BC /* Pods_Dropbox_Media_Viewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dropbox_Media_Viewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		322861A2EE544F7E7B607052 /* Pods_Dropbox_Media_Viewer_Dropbox_Media_ViewerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dropbox_Media_Viewer_Dropbox_Media_ViewerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6615700D97796E21C2A7D188 /* Pods-Dropbox Media ViewerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dropbox Media ViewerTests.release.xcconfig"; path = "Target Support Files/Pods-Dropbox Media ViewerTests/Pods-Dropbox Media ViewerTests.release.xcconfig"; sourceTree = "<group>"; };
 		8415C9BE2A9DD2FC0053B2F2 /* Dropbox Media Viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dropbox Media Viewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8415C9C12A9DD2FC0053B2F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8415C9C32A9DD2FC0053B2F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8415C9C52A9DD2FC0053B2F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8415C9C82A9DD2FC0053B2F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8415C9CB2A9DD2FC0053B2F2 /* Dropbox_Media_Viewer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dropbox_Media_Viewer.xcdatamodel; sourceTree = "<group>"; };
 		8415C9CD2A9DD3030053B2F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8415C9D02A9DD3030053B2F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8415C9D22A9DD3030053B2F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8415C9D22A9DD3030053B2F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Dropbox Media Viewer/Info/Info.plist"; sourceTree = SOURCE_ROOT; };
 		8415C9D72A9DD3040053B2F2 /* Dropbox Media ViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dropbox Media ViewerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8415C9DB2A9DD3040053B2F2 /* Dropbox_Media_ViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dropbox_Media_ViewerTests.swift; sourceTree = "<group>"; };
 		8415C9E12A9DD3040053B2F2 /* Dropbox Media ViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dropbox Media ViewerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8415C9E52A9DD3040053B2F2 /* Dropbox_Media_ViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dropbox_Media_ViewerUITests.swift; sourceTree = "<group>"; };
 		8415C9E72A9DD3040053B2F2 /* Dropbox_Media_ViewerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dropbox_Media_ViewerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		84A61A492A9DD83F000B621B /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		84A61A502A9DE02D000B621B /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
+		84A61A542A9DE064000B621B /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		84A61A572A9DE11F000B621B /* BaseTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTVCell.swift; sourceTree = "<group>"; };
+		84A61A5A2A9DE154000B621B /* BaseCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCVCell.swift; sourceTree = "<group>"; };
+		84A61A5D2A9DE1AA000B621B /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		84A61A5F2A9DE207000B621B /* UIButtonExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExt.swift; sourceTree = "<group>"; };
+		84A61A612A9DE24D000B621B /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		84A61A632A9DE2A5000B621B /* IBInspectableExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBInspectableExt.swift; sourceTree = "<group>"; };
+		84A61A652A9DE48B000B621B /* NotificationExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationExt.swift; sourceTree = "<group>"; };
+		84A61A6A2A9DE5B7000B621B /* MediaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaVC.swift; sourceTree = "<group>"; };
+		84A61A6C2A9DE5CA000B621B /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		84A61A6E2A9DE5DE000B621B /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		84A61A712A9DE663000B621B /* MediaDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaDetailsVC.swift; sourceTree = "<group>"; };
+		84A61A762A9DE798000B621B /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		84A61A782A9DE881000B621B /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		84A61A7A2A9DEC0A000B621B /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		84A61A7C2A9DEC31000B621B /* Media.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Media.storyboard; sourceTree = "<group>"; };
+		84A61A7E2A9DEC49000B621B /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		84A61A802A9DECDA000B621B /* Popup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Popup.storyboard; sourceTree = "<group>"; };
+		8A0545DFBB8B36A8A9F55F52 /* Pods-Dropbox Media Viewer-Dropbox Media ViewerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dropbox Media Viewer-Dropbox Media ViewerUITests.debug.xcconfig"; path = "Target Support Files/Pods-Dropbox Media Viewer-Dropbox Media ViewerUITests/Pods-Dropbox Media Viewer-Dropbox Media ViewerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E61E62D2488C1AED8A1F4157 /* Pods-Dropbox Media Viewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dropbox Media Viewer.debug.xcconfig"; path = "Target Support Files/Pods-Dropbox Media Viewer/Pods-Dropbox Media Viewer.debug.xcconfig"; sourceTree = "<group>"; };
+		EC604930888F627A36DFE502 /* Pods-Dropbox Media ViewerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dropbox Media ViewerTests.debug.xcconfig"; path = "Target Support Files/Pods-Dropbox Media ViewerTests/Pods-Dropbox Media ViewerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EFDA62EFBCE0627DEB92B23F /* Pods_Dropbox_Media_ViewerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dropbox_Media_ViewerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D66DC66BE243099B345A3C0C /* Pods_Dropbox_Media_Viewer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B59FC73984AE1E2BF61E40AE /* Pods_Dropbox_Media_ViewerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +122,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B2F5891F73F98E9A5C69215 /* Pods_Dropbox_Media_Viewer_Dropbox_Media_ViewerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3252CB0715AB4ECD1BC44032 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E61E62D2488C1AED8A1F4157 /* Pods-Dropbox Media Viewer.debug.xcconfig */,
+				0B13204487779C15B0C6D2F7 /* Pods-Dropbox Media Viewer.release.xcconfig */,
+				8A0545DFBB8B36A8A9F55F52 /* Pods-Dropbox Media Viewer-Dropbox Media ViewerUITests.debug.xcconfig */,
+				1AC6659E4F022CE0977C1024 /* Pods-Dropbox Media Viewer-Dropbox Media ViewerUITests.release.xcconfig */,
+				EC604930888F627A36DFE502 /* Pods-Dropbox Media ViewerTests.debug.xcconfig */,
+				6615700D97796E21C2A7D188 /* Pods-Dropbox Media ViewerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8415C9B52A9DD2FC0053B2F2 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +149,8 @@
 				8415C9DA2A9DD3040053B2F2 /* Dropbox Media ViewerTests */,
 				8415C9E42A9DD3040053B2F2 /* Dropbox Media ViewerUITests */,
 				8415C9BF2A9DD2FC0053B2F2 /* Products */,
+				3252CB0715AB4ECD1BC44032 /* Pods */,
+				D0B4C6141333FE1B488FA9CF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,12 +168,15 @@
 			isa = PBXGroup;
 			children = (
 				8415C9C12A9DD2FC0053B2F2 /* AppDelegate.swift */,
-				8415C9C32A9DD2FC0053B2F2 /* SceneDelegate.swift */,
-				8415C9C52A9DD2FC0053B2F2 /* ViewController.swift */,
-				8415C9C72A9DD2FC0053B2F2 /* Main.storyboard */,
-				8415C9CD2A9DD3030053B2F2 /* Assets.xcassets */,
-				8415C9CF2A9DD3030053B2F2 /* LaunchScreen.storyboard */,
-				8415C9D22A9DD3030053B2F2 /* Info.plist */,
+				84A61A492A9DD83F000B621B /* AppConfiguration.swift */,
+				84A61A462A9DD7A8000B621B /* Utils */,
+				84A61A442A9DD761000B621B /* Extensions */,
+				84A61A422A9DD70C000B621B /* View Controllers */,
+				84A61A432A9DD71C000B621B /* API Manager */,
+				84A61A412A9DD6FB000B621B /* Storyboards */,
+				84A61A482A9DD7E2000B621B /* Info */,
+				84A61A452A9DD795000B621B /* Resources */,
+				84A61A472A9DD7D4000B621B /* Core Data */,
 				8415C9CA2A9DD2FC0053B2F2 /* Dropbox_Media_Viewer.xcdatamodeld */,
 			);
 			path = "Dropbox Media Viewer";
@@ -130,6 +199,231 @@
 			path = "Dropbox Media ViewerUITests";
 			sourceTree = "<group>";
 		};
+		84A61A412A9DD6FB000B621B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				84A61A7A2A9DEC0A000B621B /* Auth.storyboard */,
+				8415C9C72A9DD2FC0053B2F2 /* Main.storyboard */,
+				84A61A802A9DECDA000B621B /* Popup.storyboard */,
+				84A61A7C2A9DEC31000B621B /* Media.storyboard */,
+				84A61A7E2A9DEC49000B621B /* Profile.storyboard */,
+				8415C9CF2A9DD3030053B2F2 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		84A61A422A9DD70C000B621B /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				84A61A522A9DE04A000B621B /* Base */,
+				84A61A4B2A9DDF7E000B621B /* Auth */,
+				84A61A4C2A9DDF86000B621B /* Main */,
+				84A61A4D2A9DDFA7000B621B /* Media */,
+				84A61A4E2A9DDFB6000B621B /* Profile */,
+				84A61A5C2A9DE177000B621B /* Popup */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		84A61A432A9DD71C000B621B /* API Manager */ = {
+			isa = PBXGroup;
+			children = (
+				84A61A752A9DE787000B621B /* Models */,
+				84A61A762A9DE798000B621B /* APIManager.swift */,
+			);
+			path = "API Manager";
+			sourceTree = "<group>";
+		};
+		84A61A442A9DD761000B621B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				84A61A612A9DE24D000B621B /* UIViewExt.swift */,
+				84A61A5F2A9DE207000B621B /* UIButtonExt.swift */,
+				84A61A652A9DE48B000B621B /* NotificationExt.swift */,
+				84A61A632A9DE2A5000B621B /* IBInspectableExt.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		84A61A452A9DD795000B621B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8415C9CD2A9DD3030053B2F2 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		84A61A462A9DD7A8000B621B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		84A61A472A9DD7D4000B621B /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				84A61A782A9DE881000B621B /* CoreDataManager.swift */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		84A61A482A9DD7E2000B621B /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				8415C9D22A9DD3030053B2F2 /* Info.plist */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		84A61A4B2A9DDF7E000B621B /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				84A61A4F2A9DE01F000B621B /* AuthVC */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		84A61A4C2A9DDF86000B621B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				84A61A5D2A9DE1AA000B621B /* MainTabBarController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		84A61A4D2A9DDFA7000B621B /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				84A61A672A9DE519000B621B /* MediaVC */,
+				84A61A702A9DE650000B621B /* MediaDetailsVC */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		84A61A4E2A9DDFB6000B621B /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				84A61A682A9DE520000B621B /* ProfileVC */,
+				84A61A692A9DE527000B621B /* SettingsVC */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		84A61A4F2A9DE01F000B621B /* AuthVC */ = {
+			isa = PBXGroup;
+			children = (
+				84A61A502A9DE02D000B621B /* AuthVC.swift */,
+			);
+			path = AuthVC;
+			sourceTree = "<group>";
+		};
+		84A61A522A9DE04A000B621B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				84A61A532A9DE057000B621B /* BaseVC */,
+				84A61A562A9DE106000B621B /* BaseTVCell */,
+				84A61A592A9DE143000B621B /* BaseCVCell */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		84A61A532A9DE057000B621B /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				84A61A542A9DE064000B621B /* BaseVC.swift */,
+			);
+			path = BaseVC;
+			sourceTree = "<group>";
+		};
+		84A61A562A9DE106000B621B /* BaseTVCell */ = {
+			isa = PBXGroup;
+			children = (
+				84A61A572A9DE11F000B621B /* BaseTVCell.swift */,
+			);
+			path = BaseTVCell;
+			sourceTree = "<group>";
+		};
+		84A61A592A9DE143000B621B /* BaseCVCell */ = {
+			isa = PBXGroup;
+			children = (
+				84A61A5A2A9DE154000B621B /* BaseCVCell.swift */,
+			);
+			path = BaseCVCell;
+			sourceTree = "<group>";
+		};
+		84A61A5C2A9DE177000B621B /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Popup;
+			sourceTree = "<group>";
+		};
+		84A61A672A9DE519000B621B /* MediaVC */ = {
+			isa = PBXGroup;
+			children = (
+				84A61A732A9DE75F000B621B /* Cells */,
+				84A61A6A2A9DE5B7000B621B /* MediaVC.swift */,
+			);
+			path = MediaVC;
+			sourceTree = "<group>";
+		};
+		84A61A682A9DE520000B621B /* ProfileVC */ = {
+			isa = PBXGroup;
+			children = (
+				84A61A6C2A9DE5CA000B621B /* ProfileVC.swift */,
+			);
+			path = ProfileVC;
+			sourceTree = "<group>";
+		};
+		84A61A692A9DE527000B621B /* SettingsVC */ = {
+			isa = PBXGroup;
+			children = (
+				84A61A742A9DE766000B621B /* Cells */,
+				84A61A6E2A9DE5DE000B621B /* SettingsVC.swift */,
+			);
+			path = SettingsVC;
+			sourceTree = "<group>";
+		};
+		84A61A702A9DE650000B621B /* MediaDetailsVC */ = {
+			isa = PBXGroup;
+			children = (
+				84A61A712A9DE663000B621B /* MediaDetailsVC.swift */,
+			);
+			path = MediaDetailsVC;
+			sourceTree = "<group>";
+		};
+		84A61A732A9DE75F000B621B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		84A61A742A9DE766000B621B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		84A61A752A9DE787000B621B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D0B4C6141333FE1B488FA9CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B50870FE5C5D7F8AA8F47BC /* Pods_Dropbox_Media_Viewer.framework */,
+				322861A2EE544F7E7B607052 /* Pods_Dropbox_Media_Viewer_Dropbox_Media_ViewerUITests.framework */,
+				EFDA62EFBCE0627DEB92B23F /* Pods_Dropbox_Media_ViewerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +431,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8415C9EB2A9DD3040053B2F2 /* Build configuration list for PBXNativeTarget "Dropbox Media Viewer" */;
 			buildPhases = (
+				6B7CD1B208924479B31BB8D9 /* [CP] Check Pods Manifest.lock */,
 				8415C9BA2A9DD2FC0053B2F2 /* Sources */,
 				8415C9BB2A9DD2FC0053B2F2 /* Frameworks */,
 				8415C9BC2A9DD2FC0053B2F2 /* Resources */,
+				E1E014F1C0F1C2800912B977 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,6 +450,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8415C9EE2A9DD3040053B2F2 /* Build configuration list for PBXNativeTarget "Dropbox Media ViewerTests" */;
 			buildPhases = (
+				56FBA21B11B2C590E8DF12E7 /* [CP] Check Pods Manifest.lock */,
 				8415C9D32A9DD3040053B2F2 /* Sources */,
 				8415C9D42A9DD3040053B2F2 /* Frameworks */,
 				8415C9D52A9DD3040053B2F2 /* Resources */,
@@ -172,9 +469,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8415C9F12A9DD3040053B2F2 /* Build configuration list for PBXNativeTarget "Dropbox Media ViewerUITests" */;
 			buildPhases = (
+				BF66DCF97DF476AFF90BE520 /* [CP] Check Pods Manifest.lock */,
 				8415C9DD2A9DD3040053B2F2 /* Sources */,
 				8415C9DE2A9DD3040053B2F2 /* Frameworks */,
 				8415C9DF2A9DD3040053B2F2 /* Resources */,
+				0517E1338A68AF6BE8954151 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,6 +533,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A61A812A9DECDA000B621B /* Popup.storyboard in Resources */,
+				84A61A7F2A9DEC49000B621B /* Profile.storyboard in Resources */,
+				84A61A7B2A9DEC0A000B621B /* Auth.storyboard in Resources */,
+				84A61A7D2A9DEC31000B621B /* Media.storyboard in Resources */,
 				8415C9D12A9DD3030053B2F2 /* LaunchScreen.storyboard in Resources */,
 				8415C9CE2A9DD3030053B2F2 /* Assets.xcassets in Resources */,
 				8415C9C92A9DD2FC0053B2F2 /* Main.storyboard in Resources */,
@@ -256,15 +559,132 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0517E1338A68AF6BE8954151 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dropbox Media Viewer-Dropbox Media ViewerUITests/Pods-Dropbox Media Viewer-Dropbox Media ViewerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dropbox Media Viewer-Dropbox Media ViewerUITests/Pods-Dropbox Media Viewer-Dropbox Media ViewerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dropbox Media Viewer-Dropbox Media ViewerUITests/Pods-Dropbox Media Viewer-Dropbox Media ViewerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56FBA21B11B2C590E8DF12E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dropbox Media ViewerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B7CD1B208924479B31BB8D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dropbox Media Viewer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF66DCF97DF476AFF90BE520 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dropbox Media Viewer-Dropbox Media ViewerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1E014F1C0F1C2800912B977 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dropbox Media Viewer/Pods-Dropbox Media Viewer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dropbox Media Viewer/Pods-Dropbox Media Viewer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dropbox Media Viewer/Pods-Dropbox Media Viewer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8415C9BA2A9DD2FC0053B2F2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8415C9C62A9DD2FC0053B2F2 /* ViewController.swift in Sources */,
+				84A61A582A9DE11F000B621B /* BaseTVCell.swift in Sources */,
 				8415C9CC2A9DD2FC0053B2F2 /* Dropbox_Media_Viewer.xcdatamodeld in Sources */,
+				84A61A6D2A9DE5CA000B621B /* ProfileVC.swift in Sources */,
+				84A61A622A9DE24D000B621B /* UIViewExt.swift in Sources */,
+				84A61A5E2A9DE1AA000B621B /* MainTabBarController.swift in Sources */,
 				8415C9C22A9DD2FC0053B2F2 /* AppDelegate.swift in Sources */,
-				8415C9C42A9DD2FC0053B2F2 /* SceneDelegate.swift in Sources */,
+				84A61A792A9DE881000B621B /* CoreDataManager.swift in Sources */,
+				84A61A642A9DE2A5000B621B /* IBInspectableExt.swift in Sources */,
+				84A61A512A9DE02D000B621B /* AuthVC.swift in Sources */,
+				84A61A4A2A9DD83F000B621B /* AppConfiguration.swift in Sources */,
+				84A61A662A9DE48B000B621B /* NotificationExt.swift in Sources */,
+				84A61A5B2A9DE154000B621B /* BaseCVCell.swift in Sources */,
+				84A61A602A9DE207000B621B /* UIButtonExt.swift in Sources */,
+				84A61A772A9DE798000B621B /* APIManager.swift in Sources */,
+				84A61A552A9DE064000B621B /* BaseVC.swift in Sources */,
+				84A61A6B2A9DE5B7000B621B /* MediaVC.swift in Sources */,
+				84A61A722A9DE663000B621B /* MediaDetailsVC.swift in Sources */,
+				84A61A6F2A9DE5DE000B621B /* SettingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +856,7 @@
 		};
 		8415C9EC2A9DD3040053B2F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E61E62D2488C1AED8A1F4157 /* Pods-Dropbox Media Viewer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -444,11 +865,12 @@
 				DEVELOPMENT_TEAM = N4M3759P9C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Dropbox Media Viewer/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = DMV;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -456,14 +878,18 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Dropbox-Media-Viewer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		8415C9ED2A9DD3040053B2F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B13204487779C15B0C6D2F7 /* Pods-Dropbox Media Viewer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -472,11 +898,12 @@
 				DEVELOPMENT_TEAM = N4M3759P9C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Dropbox Media Viewer/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = DMV;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -484,14 +911,18 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Dropbox-Media-Viewer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		8415C9EF2A9DD3040053B2F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC604930888F627A36DFE502 /* Pods-Dropbox Media ViewerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +943,7 @@
 		};
 		8415C9F02A9DD3040053B2F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6615700D97796E21C2A7D188 /* Pods-Dropbox Media ViewerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -532,6 +964,7 @@
 		};
 		8415C9F22A9DD3040053B2F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A0545DFBB8B36A8A9F55F52 /* Pods-Dropbox Media Viewer-Dropbox Media ViewerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -550,6 +983,7 @@
 		};
 		8415C9F32A9DD3040053B2F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AC6659E4F022CE0977C1024 /* Pods-Dropbox Media Viewer-Dropbox Media ViewerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

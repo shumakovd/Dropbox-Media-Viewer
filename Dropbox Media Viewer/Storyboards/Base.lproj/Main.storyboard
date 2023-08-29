@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SNh-e4-X7S">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Tab Bar Controller-->
+        <scene sceneID="7UT-B2-7eN">
+            <objects>
+                <tabBarController storyboardIdentifier="MainTabBarController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SNh-e4-X7S" customClass="MainTabBarController" customModule="Dropbox_Media_Viewer" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Hbj-MQ-0rf">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="VwT-WQ-Ob4" kind="relationship" relationship="viewControllers" id="Un1-ID-b6g"/>
+                        <segue destination="qD4-YM-tHA" kind="relationship" relationship="viewControllers" id="QUg-Aw-3SD"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k06-vA-nGC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-567" y="-262"/>
+        </scene>
+        <!--MediaNVC-->
+        <scene sceneID="c2J-bc-Uhp">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="MediaID" storyboardName="Media" referencedIdentifier="MediaNVC" id="VwT-WQ-Ob4" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="iN9-sK-rKb"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LLb-d1-6Sk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-983" y="200"/>
+        </scene>
+        <!--ProfileNVC-->
+        <scene sceneID="Qgb-GU-xzk">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" referencedIdentifier="ProfileNVC" id="qD4-YM-tHA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Joe-g8-Cgg"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AqP-Cc-M9Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-158" y="200"/>
+        </scene>
+    </scenes>
+</document>
