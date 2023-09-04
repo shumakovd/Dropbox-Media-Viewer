@@ -15,4 +15,6 @@ extension Notification.Name {
     //
     static let enableTabBarItems = NSNotification.Name("enableTabBarItems")
     static let disableTabBarItems = NSNotification.Name("disableTabBarItems")
+    //
+    static let updateModel = NSNotification.Name("updateModel")
 }

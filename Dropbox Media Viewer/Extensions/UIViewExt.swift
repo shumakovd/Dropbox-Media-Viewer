@@ -9,13 +9,13 @@ import UIKit
 
 extension UIView {
     
-    // MARK: - Initialization
+    // MARK: - Initialization -
     
     class func initFromNib<T: UIView>() -> T {
         return Bundle.main.loadNibNamed(String(describing: self), owner: nil, options: nil)?[0] as! T
     }
     
-    // MARK: - Animations
+    // MARK: - Animations -
     
     func bounce() {
         UIView.animate(withDuration: 0.1,
@@ -29,7 +29,20 @@ extension UIView {
         })
     }
     
-    // MARK: - Shadows
+    func viewAnimationTouch(_ completion: @escaping () -> Void) {
+        UIView.animate(withDuration: 0.1,
+        animations: {
+            self.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
+        },
+        completion: { _ in
+            UIView.animate(withDuration: 0.1) {
+                self.transform = CGAffineTransform.identity
+                completion()
+            }
+        })
+    }
+    
+    // MARK: - Shadows -
     
     func tabbarDrowShadow() {
         self.layer.masksToBounds = false
