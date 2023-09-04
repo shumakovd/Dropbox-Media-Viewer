@@ -11,7 +11,8 @@ class AuthVC: BaseVC {
     
     // MARK: - IBOutlets -
     
-    // MARK: - Properties -
+    @IBOutlet private weak var authWithDropBoxButton: UIButton!
+    
     
     // MARK: - Lifecycle -
     
@@ -19,12 +20,10 @@ class AuthVC: BaseVC {
         super.viewDidLoad()
     }
     
-    // MARK: - Methods -
-    
-    // MARK: - API Methods -
     
     // MARK: - IBActions -
     
+    @IBAction private func loginWuthDropbox(_ sender: UIButton) {
+        APIManager.authorizeFromControllerV2(viewController: self)
+    }
 }
-
-// MARK: - Extensions -
