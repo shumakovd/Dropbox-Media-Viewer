@@ -36,12 +36,12 @@ class MainTabBarController: UITabBarController {
         willSet {
             switch newValue {
             case 0:
-                mediaButton.setImage(UIImage(named: "tabbar_map_enabled_icon"), for: .normal)
-                profileButton.setImage(UIImage(named: "tabbar_profile_disabled_icon"), for: .normal)
+                mediaButton.setImage(UIImage(named: "media_enabled_icon"), for: .normal)
+                profileButton.setImage(UIImage(named: "profile_disabled_icon"), for: .normal)
             
             case 1:
-                mediaButton.setImage(UIImage(named: "tabbar_map_enabled_icon"), for: .normal)
-                profileButton.setImage(UIImage(named: "tabbar_profile_disabled_icon"), for: .normal)
+                mediaButton.setImage(UIImage(named: "media_disabled_icon"), for: .normal)
+                profileButton.setImage(UIImage(named: "profile_enabled_icon"), for: .normal)
             
             default:
                 break
@@ -60,7 +60,6 @@ class MainTabBarController: UITabBarController {
         
         // Call Methods
         setupTabBar()
-        getUserData()
         listenNotifications()
     }
     
@@ -109,7 +108,7 @@ class MainTabBarController: UITabBarController {
         
         // Set up the custom tab bar
         customTabBar.cornerRadiusView = 32
-        customTabBar.backgroundColor = UIColor.lightGray
+        customTabBar.backgroundColor = UIColor(named: "BackgroundColor")
         
         customTabBar.tabbarDrowShadow()
                 
@@ -120,7 +119,7 @@ class MainTabBarController: UITabBarController {
         NSLayoutConstraint.activate([
             customTabBar.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             customTabBar.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -32),
-            customTabBar.widthAnchor.constraint(equalToConstant: 136),
+            customTabBar.widthAnchor.constraint(equalToConstant: 112),
             customTabBar.heightAnchor.constraint(equalToConstant: 64)
         ])
 
@@ -157,21 +156,10 @@ class MainTabBarController: UITabBarController {
     }
     
     
-    // MARK: - Network Methods -
-    
-    private func getUserData() {
-//        disableTabBar()
-//        AppConfiguration.getUserDataFromDatabase() { result in
-//            if result {
-//                self.enableTabBar()
-//            }
-//        }
-    }
-    
-    
     // MARK: - Tab Bar Action Methods -
     
-    // MARK: - Map
+    
+    // MARK: - Media
     
     @objc private func mediaTapped() {
         // Change Index
