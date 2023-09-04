@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Pushwoosh
 import SwiftyDropbox
 
 @main
@@ -21,6 +22,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // API Auth
         APIManager.setup()
+        
+        // Pushwoosh
+        Pushwoosh.sharedInstance().delegate = self
+        Pushwoosh.sharedInstance().registerForPushNotifications()
+        
+        // Event
+        let attributes: [String : Any] = [
+           "application_version" : "1.0.0",
+           "device_type" : 1
+        ]
+        PWInAppManager.shared().postEvent("PW_ApplicationOpen", withAttributes: attributes)
                                     
         return true
     }
@@ -53,15 +65,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return authResult
     }
-    
-    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        //
-    }
-
-    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any],
-        fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
-        //
-     }
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state.
@@ -90,5 +93,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         CoreDataManager.shared.saveContext()
+    }
+}
+
+extension AppDelegate: PWMessagingDelegate {
+    
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        Pushwoosh.sharedInstance().handlePushRegistration(deviceToken)
+    }
+
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any],
+                     fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        Pushwoosh.sharedInstance().handlePushReceived(userInfo)
+        completionHandler(.noData)
+    }
+    
+    func pushwoosh(_ pushwoosh: Pushwoosh, onMessageReceived message: PWMessage) {
+        print("onMessageRecieved: ", message.payload?.description)
+    }
+    
+    func pushwoosh(_ pushwoosh: Pushwoosh, onMessageOpened message: PWMessage) {
+        print("onMessageOpened: ", message.payload?.description)
     }
 }

@@ -86,6 +86,7 @@ class MediaPreviewTVCell: BaseTVCell {
         
         switch mediaFile.mediaType {
         case .photo:
+            videoMarkImageView.isHidden = true
             configureUIForImageMedia(mediaFile.path ?? "")
             
         case .video:

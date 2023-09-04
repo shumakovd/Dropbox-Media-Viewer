@@ -189,7 +189,11 @@ class FileDetailsTVCell: BaseTVCell {
     @objc private func playerDidFinishPlaying() {
         guard let player = player else { return }
         player.seek(to: .zero)
-        // playPauseButton.setImage(UIImage(systemName: "play"), for: .normal)
+        if #available(iOS 13.0, *) {
+            playPauseButton.setImage(UIImage(systemName: "play"), for: .normal)
+        } else {
+            // Fallback on earlier versions
+        }
     }
     
     
@@ -214,11 +218,19 @@ class FileDetailsTVCell: BaseTVCell {
         if player.rate == 0 {
             // Player is paused, start playback
             player.play()
-            // sender.setImage(UIImage(systemName: "pause"), for: .normal)
+            if #available(iOS 13.0, *) {
+                sender.setImage(UIImage(systemName: "pause"), for: .normal)
+            } else {
+                // Fallback on earlier versions
+            }
         } else {
             // Player is playing, pause it
             player.pause()
-            // sender.setImage(UIImage(systemName: "play"), for: .normal)
+            if #available(iOS 13.0, *) {
+                sender.setImage(UIImage(systemName: "play"), for: .normal)
+            } else {
+                // Fallback on earlier versions
+            }
         }
     }
     
