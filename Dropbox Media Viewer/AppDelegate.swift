@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftyDropbox
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -13,8 +14,44 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+                
+        // Cache Manager
+        let observer = MyCacheObserver()
+        CacheManager.shared.addObserver(observer)
+        
+        // API Auth
+        APIManager.setup()
+                                    
         return true
+    }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        let authResult = DropboxClientsManager.handleRedirectURL(url) { authResult in
+            switch authResult {
+            case .success(let token):
+                
+                APIManager.checkAccessToken { result in
+                    if result {
+                        // Cache Access Token
+                        CacheManager.shared.set(key: .accessToken, value: token.accessToken)
+                        
+                        // Successfully Authentication
+                        AppConfiguration.mainVC()
+                    }
+                }
+                
+            case .cancel:
+                print("API Auth canceled")
+                
+            case .error(let error, let description):
+                print("API Auth Error: \(error) - \(description)")
+                
+            default:
+                break
+            }
+        }
+        
+        return authResult
     }
     
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
