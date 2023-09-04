@@ -19,6 +19,8 @@ class BaseVC: UIViewController, UIGestureRecognizerDelegate {
     
     // MARK: - Properties -
     
+    private var showTabBar: Bool = false
+    
     
     // MARK: - Lifecycle -
     
@@ -34,9 +36,25 @@ class BaseVC: UIViewController, UIGestureRecognizerDelegate {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        
+        // Tab Bar
+        // Check if the view controller being navigated to is a specific type
+        if (self.navigationController?.viewControllers.last is MediaVC) ||
+           (self.navigationController?.viewControllers.last is ProfileVC) {
+            
+            showTabBar = true
+
+        } else {
+            NotificationCenter.default.post(name: .hideTabBar, object: nil)
+        }
     }
     
     deinit {
+                
+        if showTabBar == true {
+            NotificationCenter.default.post(name: .showTabBar, object: nil)
+        }
+        
         removeNotifications()
     }
     

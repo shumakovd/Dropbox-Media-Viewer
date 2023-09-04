@@ -16,7 +16,7 @@ class BaseCVCell: UICollectionViewCell {
     }
 
     class var cellIdentifier: String {
-        assertionFailure("Method 'cellIdentifier' need to be overriden in BasicCollectionViewCell subclass")
+        assertionFailure("Method 'cellIdentifier' need to be overriden in BaseCVCell subclass")
         return ""
     }
 

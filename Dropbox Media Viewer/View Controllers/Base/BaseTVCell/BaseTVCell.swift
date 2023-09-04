@@ -25,7 +25,7 @@ class BaseTVCell: UITableViewCell {
     }
 
     class var cellIdentifier: String {
-        assertionFailure("Method 'cellIdentifier' need to be overriden in BasicTableViewCell subclass")
+        assertionFailure("Method 'cellIdentifier' need to be overriden in BaseTVCell subclass")
         return ""
     }
 
