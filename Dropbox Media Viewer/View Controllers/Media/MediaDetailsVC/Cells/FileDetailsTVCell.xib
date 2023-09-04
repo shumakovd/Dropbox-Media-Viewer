@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="370" id="KGk-i7-Jjw" customClass="FileDetailsTVCell" customModule="Dropbox_Media_Viewer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="514" height="370"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="514" height="370"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h9S-Vb-DV6">
+                        <rect key="frame" x="8" y="8" width="498" height="354"/>
+                        <color key="backgroundColor" name="ImagePlaceholderColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="0P1-qf-08g">
+                        <rect key="frame" x="241" y="171" width="32" height="28"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="5cw-CD-Ntf"/>
+                            <constraint firstAttribute="width" constant="32" id="QiM-Gb-Ntx"/>
+                        </constraints>
+                    </imageView>
+                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="e8X-lF-o8c">
+                        <rect key="frame" x="36" y="294" width="442" height="4"/>
+                    </progressView>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="qQE-vL-dGB">
+                        <rect key="frame" x="193" y="314" width="128" height="32"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wH3-J2-0yL">
+                                <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                                <color key="backgroundColor" name="ImagePlaceholderColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="0BX-Wh-6Fs"/>
+                                    <constraint firstAttribute="width" constant="32" id="Ttk-KN-PX8"/>
+                                </constraints>
+                                <color key="tintColor" name="TextColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="gobackward.15" catalog="system"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="goBackwardAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="kWR-Cr-bF3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5vD-OY-ppg">
+                                <rect key="frame" x="48" y="0.0" width="32" height="32"/>
+                                <color key="backgroundColor" name="ImagePlaceholderColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="iez-1d-LZg"/>
+                                    <constraint firstAttribute="height" constant="32" id="kxS-dn-Npr"/>
+                                </constraints>
+                                <color key="tintColor" name="TextColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="play" catalog="system"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="playPauseAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="sXF-fd-g3a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdX-y7-31u">
+                                <rect key="frame" x="96" y="0.0" width="32" height="32"/>
+                                <color key="backgroundColor" name="ImagePlaceholderColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="SAg-aw-HSb"/>
+                                    <constraint firstAttribute="height" constant="32" id="b3T-j5-TKo"/>
+                                </constraints>
+                                <color key="tintColor" name="TextColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="goforward.15" catalog="system"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="goForwardAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="BRd-h5-VoK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="MEb-OS-Fd9"/>
+                            <constraint firstAttribute="width" constant="128" id="UnK-Sg-Xdc"/>
+                        </constraints>
+                    </stackView>
+                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="hVH-Ua-Us3">
+                        <rect key="frame" x="247" y="175" width="20" height="20"/>
+                        <color key="color" name="AccentColor"/>
+                    </activityIndicatorView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Isi-Zp-b4v">
+                        <rect key="frame" x="8" y="8" width="498" height="354"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <connections>
+                            <action selector="playAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="QZb-uo-GJT"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="h9S-Vb-DV6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="0G0-tb-KxC"/>
+                    <constraint firstItem="Isi-Zp-b4v" firstAttribute="trailing" secondItem="h9S-Vb-DV6" secondAttribute="trailing" id="3d5-CM-KqQ"/>
+                    <constraint firstItem="h9S-Vb-DV6" firstAttribute="bottomMargin" secondItem="qQE-vL-dGB" secondAttribute="bottomMargin" constant="8" id="4vC-u0-RFE"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="e8X-lF-o8c" secondAttribute="trailing" constant="16" id="8cd-OK-Oo5"/>
+                    <constraint firstItem="Isi-Zp-b4v" firstAttribute="leading" secondItem="h9S-Vb-DV6" secondAttribute="leading" id="A3p-07-Q0n"/>
+                    <constraint firstItem="hVH-Ua-Us3" firstAttribute="centerY" secondItem="h9S-Vb-DV6" secondAttribute="centerY" id="AkI-Qe-GN2"/>
+                    <constraint firstItem="qQE-vL-dGB" firstAttribute="top" secondItem="e8X-lF-o8c" secondAttribute="bottom" constant="16" id="C7x-Hd-bbu"/>
+                    <constraint firstItem="hVH-Ua-Us3" firstAttribute="centerX" secondItem="h9S-Vb-DV6" secondAttribute="centerX" id="E0s-sA-nGq"/>
+                    <constraint firstItem="e8X-lF-o8c" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="16" id="JfO-kX-ukG"/>
+                    <constraint firstAttribute="bottom" secondItem="h9S-Vb-DV6" secondAttribute="bottom" constant="8" id="OO2-ah-6Kb"/>
+                    <constraint firstItem="0P1-qf-08g" firstAttribute="centerX" secondItem="h9S-Vb-DV6" secondAttribute="centerX" id="UcX-t1-52R"/>
+                    <constraint firstItem="0P1-qf-08g" firstAttribute="centerY" secondItem="h9S-Vb-DV6" secondAttribute="centerY" id="fgw-0o-Rjo"/>
+                    <constraint firstItem="h9S-Vb-DV6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="gss-2c-TdA"/>
+                    <constraint firstItem="Isi-Zp-b4v" firstAttribute="bottom" secondItem="h9S-Vb-DV6" secondAttribute="bottom" id="nCr-8O-HqJ"/>
+                    <constraint firstItem="Isi-Zp-b4v" firstAttribute="top" secondItem="h9S-Vb-DV6" secondAttribute="top" id="qPR-WI-fng"/>
+                    <constraint firstAttribute="trailing" secondItem="h9S-Vb-DV6" secondAttribute="trailing" constant="8" id="rxB-sU-VVn"/>
+                    <constraint firstItem="qQE-vL-dGB" firstAttribute="centerX" secondItem="h9S-Vb-DV6" secondAttribute="centerX" id="sq6-Lv-ycE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="activityIndicator" destination="hVH-Ua-Us3" id="166-fk-U3P"/>
+                <outlet property="goBackwardButton" destination="wH3-J2-0yL" id="mzt-Xn-sG2"/>
+                <outlet property="goForwardButton" destination="kdX-y7-31u" id="Ulj-nE-XMY"/>
+                <outlet property="mediaImageView" destination="h9S-Vb-DV6" id="2u7-BO-9yS"/>
+                <outlet property="playButton" destination="Isi-Zp-b4v" id="LDC-iE-Mhx"/>
+                <outlet property="playPauseButton" destination="5vD-OY-ppg" id="JSW-Op-OGb"/>
+                <outlet property="playerStackView" destination="qQE-vL-dGB" id="mlz-iV-Lz9"/>
+                <outlet property="progressView" destination="e8X-lF-o8c" id="YCF-04-xqd"/>
+                <outlet property="videoMarkImageView" destination="0P1-qf-08g" id="UPg-nC-bkp"/>
+            </connections>
+            <point key="canvasLocation" x="380.15267175572518" y="107.04225352112677"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="gobackward.15" catalog="system" width="119" height="128"/>
+        <image name="goforward.15" catalog="system" width="119" height="128"/>
+        <image name="play" catalog="system" width="117" height="128"/>
+        <image name="play.fill" catalog="system" width="117" height="128"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.3919999897480011" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ImagePlaceholderColor">
+            <color red="0.85100001096725464" green="0.85100001096725464" blue="0.85100001096725464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>
