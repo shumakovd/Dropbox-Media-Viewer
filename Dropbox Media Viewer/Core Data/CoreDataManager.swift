@@ -8,6 +8,8 @@
 import UIKit
 import CoreData
 
+// Not used in this project as necessary. Will be added later
+
 class CoreDataManager {
     
     // Shared Instance
