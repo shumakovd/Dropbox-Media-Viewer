@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="54" id="KGk-i7-Jjw" customClass="ProfileControlElementsTVCell" customModule="Dropbox_Media_Viewer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="54"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="54"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView contentMode="scaleToFill" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="nkA-fA-IQP">
+                        <rect key="frame" x="176" y="8" width="128" height="32"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GwM-to-39M">
+                                <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="KfO-vD-mMe"/>
+                                    <constraint firstAttribute="width" constant="32" id="nPQ-WS-lBK"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="cache_clear_icon"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="337-Hm-jh2">
+                                <rect key="frame" x="96" y="0.0" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="ABk-4N-Dsg"/>
+                                    <constraint firstAttribute="width" constant="32" id="CKH-5Z-Gjl"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="leave_icon"/>
+                            </button>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="nkA-fA-IQP" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="FjM-Kt-R5T"/>
+                    <constraint firstAttribute="bottom" secondItem="nkA-fA-IQP" secondAttribute="bottom" constant="8" id="YjG-5w-KdG"/>
+                    <constraint firstItem="nkA-fA-IQP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="dIh-uh-oko"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <point key="canvasLocation" x="261.06870229007632" y="2.1126760563380285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cache_clear_icon" width="667" height="668"/>
+        <image name="leave_icon" width="667" height="667"/>
+    </resources>
+</document>
