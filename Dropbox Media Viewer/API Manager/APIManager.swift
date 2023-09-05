@@ -16,7 +16,7 @@ class APIManager {
         return APIManager()
     }()
     
-    private init() {}
+    init() {}
     
     // MARK: - Properties -
                 

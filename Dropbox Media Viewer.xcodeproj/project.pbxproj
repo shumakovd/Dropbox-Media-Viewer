@@ -29,6 +29,7 @@
 		84999BE42AA5E4C000121211 /* ProfileAdditionalInfoTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84999BE22AA5E4C000121211 /* ProfileAdditionalInfoTVCell.xib */; };
 		84999BE72AA5E87100121211 /* ProfileControlElementsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84999BE52AA5E87100121211 /* ProfileControlElementsTVCell.swift */; };
 		84999BE82AA5E87100121211 /* ProfileControlElementsTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84999BE62AA5E87100121211 /* ProfileControlElementsTVCell.xib */; };
+		849C72EC2AA72AAC00B48BBC /* Dropbox_Media_ViewerAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849C72EB2AA72AAC00B48BBC /* Dropbox_Media_ViewerAPITests.swift */; };
 		84A61A4A2A9DD83F000B621B /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A61A492A9DD83F000B621B /* AppConfiguration.swift */; };
 		84A61A512A9DE02D000B621B /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A61A502A9DE02D000B621B /* AuthVC.swift */; };
 		84A61A552A9DE064000B621B /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A61A542A9DE064000B621B /* BaseVC.swift */; };
@@ -130,6 +131,7 @@
 		84999BE22AA5E4C000121211 /* ProfileAdditionalInfoTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileAdditionalInfoTVCell.xib; sourceTree = "<group>"; };
 		84999BE52AA5E87100121211 /* ProfileControlElementsTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileControlElementsTVCell.swift; sourceTree = "<group>"; };
 		84999BE62AA5E87100121211 /* ProfileControlElementsTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileControlElementsTVCell.xib; sourceTree = "<group>"; };
+		849C72EB2AA72AAC00B48BBC /* Dropbox_Media_ViewerAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dropbox_Media_ViewerAPITests.swift; sourceTree = "<group>"; };
 		84A61A492A9DD83F000B621B /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
 		84A61A502A9DE02D000B621B /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
 		84A61A542A9DE064000B621B /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
@@ -258,6 +260,7 @@
 		8415C9DA2A9DD3040053B2F2 /* Dropbox Media ViewerTests */ = {
 			isa = PBXGroup;
 			children = (
+				849C72EB2AA72AAC00B48BBC /* Dropbox_Media_ViewerAPITests.swift */,
 				8415C9DB2A9DD3040053B2F2 /* Dropbox_Media_ViewerTests.swift */,
 			);
 			path = "Dropbox Media ViewerTests";
@@ -836,6 +839,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				849C72EC2AA72AAC00B48BBC /* Dropbox_Media_ViewerAPITests.swift in Sources */,
 				8415C9DC2A9DD3040053B2F2 /* Dropbox_Media_ViewerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

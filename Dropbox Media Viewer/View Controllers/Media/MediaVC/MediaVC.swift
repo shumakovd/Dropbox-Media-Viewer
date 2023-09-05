@@ -30,7 +30,7 @@ class MediaVC: BaseVC {
             let attributes: [String : Any] = [
                 "application_version" : "1.0.0",
                 "device_type" : 1
-            ]            
+            ]
             PWInAppManager.shared().postEvent("PW_Media_Loaded", withAttributes: attributes)
         }
     }
