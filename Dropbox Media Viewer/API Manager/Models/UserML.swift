@@ -19,7 +19,14 @@ struct UserML: Codable {
     
     enum CodingKeys: String, CodingKey {
         case id, name, email, photoURL
-    }    
+    }
+    
+    init(id: String?, name: String?, email: String?, photoURL: String?) {
+        self.id = id
+        self.name = name
+        self.email = email
+        self.photoURL = photoURL
+    }
 }
 
 extension UserML: Equatable {

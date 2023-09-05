@@ -18,15 +18,15 @@ class FileDetailsTVCell: BaseTVCell {
     // MARK: - IBOutlets -
     
     // Image Views
-    @IBOutlet private weak var mediaImageView: UIImageView!
-    @IBOutlet private weak var videoMarkImageView: UIImageView!
+    @IBOutlet weak var mediaImageView: UIImageView!
+    @IBOutlet weak var videoMarkImageView: UIImageView!
     
     // Player
-    @IBOutlet private weak var playButton: UIButton!
-    @IBOutlet private weak var playPauseButton: UIButton!
+    @IBOutlet weak var playButton: UIButton!
+    @IBOutlet weak var playPauseButton: UIButton!
     
-    @IBOutlet private weak var goForwardButton: UIButton!
-    @IBOutlet private weak var goBackwardButton: UIButton!
+    @IBOutlet weak var goForwardButton: UIButton!
+    @IBOutlet weak var goBackwardButton: UIButton!
     
     @IBOutlet private weak var progressView: UIProgressView!
     @IBOutlet private weak var playerStackView: UIStackView!
@@ -42,7 +42,7 @@ class FileDetailsTVCell: BaseTVCell {
     private weak var delegate: FileDetailsDelegate?
         
     // Player
-    private var player: AVPlayer?
+    var player: AVPlayer?
     private var playerLayer: AVPlayerLayer?
     private var playbackTimeObserver: Any?
     
@@ -199,7 +199,7 @@ class FileDetailsTVCell: BaseTVCell {
     
     // MARK: - IBActions -
     
-    @IBAction private func playAction(_ sender: UIButton) {
+    @IBAction func playAction(_ sender: UIButton) {
         guard let mediaFile = mediaFile, let path = mediaFile.path else { return }
         sender.isHidden = true
               
@@ -211,7 +211,7 @@ class FileDetailsTVCell: BaseTVCell {
         delegate?.startVideoDownload(withPath: path)
     }
     
-    @IBAction private func playPauseAction(_ sender: UIButton) {
+    @IBAction func playPauseAction(_ sender: UIButton) {
         guard let player = player else { return }
         sender.bounce()
         
@@ -234,7 +234,7 @@ class FileDetailsTVCell: BaseTVCell {
         }
     }
     
-    @IBAction private func goForwardAction(_ sender: UIButton) {
+    @IBAction func goForwardAction(_ sender: UIButton) {
         sender.bounce()
         //
         let currentTime = CMTimeGetSeconds(player?.currentTime() ?? CMTime.zero)
@@ -244,7 +244,7 @@ class FileDetailsTVCell: BaseTVCell {
         player?.seek(to: time)
     }
     
-    @IBAction private func goBackwardAction(_ sender: UIButton) {
+    @IBAction func goBackwardAction(_ sender: UIButton) {
         sender.bounce()
         //
         let currentTime = CMTimeGetSeconds(player?.currentTime() ?? CMTime.zero)

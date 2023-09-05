@@ -17,16 +17,16 @@ class MediaPreviewTVCell: BaseTVCell {
     // MARK: - IBOutlets -
     
     // Views
-    @IBOutlet private weak var bodyView: UIView!
-    @IBOutlet private weak var previewImageView: UIImageView!
-    @IBOutlet private weak var videoMarkImageView: UIImageView!
+    @IBOutlet weak var bodyView: UIView!
+    @IBOutlet weak var previewImageView: UIImageView!
+    @IBOutlet weak var videoMarkImageView: UIImageView!
     
     // Labels
-    @IBOutlet private weak var nameLabel: UILabel!
-    @IBOutlet private weak var sizeLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var sizeLabel: UILabel!
     
     // Button
-    @IBOutlet private weak var selectButton: UIButton!
+    @IBOutlet weak var selectButton: UIButton!
     
     // Activity Indicator
     @IBOutlet private weak var activityIndicator: UIActivityIndicatorView!

@@ -13,10 +13,10 @@ class ProfileImageTVCell: BaseTVCell {
     // MARK: - IBOutlets -
     
     // Image Views
-    @IBOutlet private weak var profileImageView: UIImageView!
+    @IBOutlet weak var profileImageView: UIImageView!
             
     // Activity Indicator
-    @IBOutlet private weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
 
     
     // MARK: - Properties -

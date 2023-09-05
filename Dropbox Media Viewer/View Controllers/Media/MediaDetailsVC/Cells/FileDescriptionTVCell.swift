@@ -16,9 +16,9 @@ class FileDescriptionTVCell: BaseTVCell {
     @IBOutlet private weak var bodyView: UIView!
     
     // Labels
-    @IBOutlet private weak var nameLabel: UILabel!
-    @IBOutlet private weak var sizeLabel: UILabel!
-    @IBOutlet private weak var modifiedLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var sizeLabel: UILabel!
+    @IBOutlet weak var modifiedLabel: UILabel!
     
     
     // MARK: - Properties -
