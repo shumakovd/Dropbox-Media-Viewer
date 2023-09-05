@@ -22,11 +22,7 @@ class APIManager {
                 
     static private var appKey: String = "zs9x1sysz05g7kk"
                 
-    static private var limit: UInt32 = 12
-    
-    static private var currentPage = 0
-    static private var pageSize: UInt32 = 25
-    
+    static private var limit: UInt32 = 25
     static private var currentCursor: String?
           
   

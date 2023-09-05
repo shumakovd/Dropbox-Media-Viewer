@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Pushwoosh
 
 class MediaVC: BaseVC {
     
@@ -22,6 +23,16 @@ class MediaVC: BaseVC {
         //
         setupTableView()
         fetchMediaFiles()
+        
+        let delayInSeconds = 60.0
+        DispatchQueue.main.asyncAfter(deadline: .now() + delayInSeconds) {
+            // Event
+            let attributes: [String : Any] = [
+                "application_version" : "1.0.0",
+                "device_type" : 1
+            ]            
+            PWInAppManager.shared().postEvent("PW_Media_Loaded", withAttributes: attributes)
+        }
     }
     
     deinit {

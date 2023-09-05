@@ -41,7 +41,7 @@ class ProfileVC: BaseVC {
         model = AppConfiguration.userModel
         
         // Content Inset
-        tableView.contentInset = UIEdgeInsets(top: 16, left: 0, bottom: 0, right: 0)
+        tableView.contentInset = UIEdgeInsets(top: 16, left: 0, bottom: 72, right: 0)
         
         // Relaod Data
         tableView.reloadData()

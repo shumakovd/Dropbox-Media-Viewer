@@ -26,13 +26,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Pushwoosh
         Pushwoosh.sharedInstance().delegate = self
         Pushwoosh.sharedInstance().registerForPushNotifications()
-        
-        // Event
-        let attributes: [String : Any] = [
-           "application_version" : "1.0.0",
-           "device_type" : 1
-        ]
-        PWInAppManager.shared().postEvent("PW_ApplicationOpen", withAttributes: attributes)
                                     
         return true
     }
