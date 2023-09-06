@@ -10,6 +10,7 @@
 		8405B0352A9F64DF00687B7B /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8405B0342A9F64DF00687B7B /* Media.swift */; };
 		8405B0382A9F934F00687B7B /* MediaPreviewTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8405B0362A9F934F00687B7B /* MediaPreviewTVCell.swift */; };
 		8405B0392A9F934F00687B7B /* MediaPreviewTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8405B0372A9F934F00687B7B /* MediaPreviewTVCell.xib */; };
+		8408723C2AA8F395009CA0C0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8408723B2AA8F395009CA0C0 /* Info.plist */; };
 		8415C9C22A9DD2FC0053B2F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8415C9C12A9DD2FC0053B2F2 /* AppDelegate.swift */; };
 		8415C9C92A9DD2FC0053B2F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8415C9C72A9DD2FC0053B2F2 /* Main.storyboard */; };
 		8415C9CC2A9DD2FC0053B2F2 /* Dropbox_Media_Viewer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8415C9CA2A9DD2FC0053B2F2 /* Dropbox_Media_Viewer.xcdatamodeld */; };
@@ -170,6 +171,7 @@
 		8405B0342A9F64DF00687B7B /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
 		8405B0362A9F934F00687B7B /* MediaPreviewTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPreviewTVCell.swift; sourceTree = "<group>"; };
 		8405B0372A9F934F00687B7B /* MediaPreviewTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MediaPreviewTVCell.xib; sourceTree = "<group>"; };
+		8408723B2AA8F395009CA0C0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8415C9BE2A9DD2FC0053B2F2 /* Dropbox Media Viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dropbox Media Viewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8415C9C12A9DD2FC0053B2F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8415C9C82A9DD2FC0053B2F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -220,7 +222,6 @@
 		84B242472AA61C5C00255CE6 /* Dropbox Media Viewer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Dropbox Media Viewer.entitlements"; sourceTree = "<group>"; };
 		84B2425F2AA6288300255CE6 /* PW.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PW.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B242612AA6288300255CE6 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
-		84B242632AA6288300255CE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84C04AC22A9E3D8B00F18443 /* UserML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserML.swift; sourceTree = "<group>"; };
 		84C04AC42A9E3F0200F18443 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 		84F5F4BB2AA24E5100BBEC15 /* UInt64Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UInt64Ext.swift; sourceTree = "<group>"; };
@@ -573,7 +574,7 @@
 			isa = PBXGroup;
 			children = (
 				84B242612AA6288300255CE6 /* NotificationService.swift */,
-				84B242632AA6288300255CE6 /* Info.plist */,
+				8408723B2AA8F395009CA0C0 /* Info.plist */,
 			);
 			path = PW;
 			sourceTree = "<group>";
@@ -759,6 +760,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8408723C2AA8F395009CA0C0 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
