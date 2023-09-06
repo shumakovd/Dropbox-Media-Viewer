@@ -10,7 +10,7 @@
 		8405B0352A9F64DF00687B7B /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8405B0342A9F64DF00687B7B /* Media.swift */; };
 		8405B0382A9F934F00687B7B /* MediaPreviewTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8405B0362A9F934F00687B7B /* MediaPreviewTVCell.swift */; };
 		8405B0392A9F934F00687B7B /* MediaPreviewTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8405B0372A9F934F00687B7B /* MediaPreviewTVCell.xib */; };
-		8408723C2AA8F395009CA0C0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8408723B2AA8F395009CA0C0 /* Info.plist */; };
+		840872412AA8F7B3009CA0C0 /* Pushwoosh in Frameworks */ = {isa = PBXBuildFile; productRef = 840872402AA8F7B3009CA0C0 /* Pushwoosh */; };
 		8415C9C22A9DD2FC0053B2F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8415C9C12A9DD2FC0053B2F2 /* AppDelegate.swift */; };
 		8415C9C92A9DD2FC0053B2F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8415C9C72A9DD2FC0053B2F2 /* Main.storyboard */; };
 		8415C9CC2A9DD2FC0053B2F2 /* Dropbox_Media_Viewer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8415C9CA2A9DD2FC0053B2F2 /* Dropbox_Media_Viewer.xcdatamodeld */; };
@@ -112,9 +112,6 @@
 		84A61A7D2A9DEC31000B621B /* Media.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A61A7C2A9DEC31000B621B /* Media.storyboard */; };
 		84A61A7F2A9DEC49000B621B /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A61A7E2A9DEC49000B621B /* Profile.storyboard */; };
 		84AF0D262AA4DCEA00EBCEAB /* UIImageExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AF0D252AA4DCEA00EBCEAB /* UIImageExt.swift */; };
-		84B2425A2AA6279500255CE6 /* Pushwoosh in Frameworks */ = {isa = PBXBuildFile; productRef = 84B242592AA6279500255CE6 /* Pushwoosh */; };
-		84B242622AA6288300255CE6 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B242612AA6288300255CE6 /* NotificationService.swift */; };
-		84B242662AA6288300255CE6 /* PW.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 84B2425F2AA6288300255CE6 /* PW.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		84C04AC32A9E3D8B00F18443 /* UserML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C04AC22A9E3D8B00F18443 /* UserML.swift */; };
 		84C04AC52A9E3F0200F18443 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C04AC42A9E3F0200F18443 /* CacheManager.swift */; };
 		84F5F4BC2AA24E5100BBEC15 /* UInt64Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F5F4BB2AA24E5100BBEC15 /* UInt64Ext.swift */; };
@@ -139,13 +136,6 @@
 			remoteGlobalIDString = 8415C9BD2A9DD2FC0053B2F2;
 			remoteInfo = "Dropbox Media Viewer";
 		};
-		84B242642AA6288300255CE6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8415C9B62A9DD2FC0053B2F2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 84B2425E2AA6288300255CE6;
-			remoteInfo = PW;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -155,7 +145,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				84B242662AA6288300255CE6 /* PW.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -171,7 +160,6 @@
 		8405B0342A9F64DF00687B7B /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
 		8405B0362A9F934F00687B7B /* MediaPreviewTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPreviewTVCell.swift; sourceTree = "<group>"; };
 		8405B0372A9F934F00687B7B /* MediaPreviewTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MediaPreviewTVCell.xib; sourceTree = "<group>"; };
-		8408723B2AA8F395009CA0C0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8415C9BE2A9DD2FC0053B2F2 /* Dropbox Media Viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dropbox Media Viewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8415C9C12A9DD2FC0053B2F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8415C9C82A9DD2FC0053B2F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -220,8 +208,6 @@
 		84A61A7E2A9DEC49000B621B /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		84AF0D252AA4DCEA00EBCEAB /* UIImageExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExt.swift; sourceTree = "<group>"; };
 		84B242472AA61C5C00255CE6 /* Dropbox Media Viewer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Dropbox Media Viewer.entitlements"; sourceTree = "<group>"; };
-		84B2425F2AA6288300255CE6 /* PW.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PW.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		84B242612AA6288300255CE6 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		84C04AC22A9E3D8B00F18443 /* UserML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserML.swift; sourceTree = "<group>"; };
 		84C04AC42A9E3F0200F18443 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 		84F5F4BB2AA24E5100BBEC15 /* UInt64Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UInt64Ext.swift; sourceTree = "<group>"; };
@@ -238,7 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D66DC66BE243099B345A3C0C /* Pods_Dropbox_Media_Viewer.framework in Frameworks */,
-				84B2425A2AA6279500255CE6 /* Pushwoosh in Frameworks */,
+				840872412AA8F7B3009CA0C0 /* Pushwoosh in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,13 +241,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B2F5891F73F98E9A5C69215 /* Pods_Dropbox_Media_Viewer_Dropbox_Media_ViewerUITests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		84B2425C2AA6288300255CE6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +266,6 @@
 				8415C9C02A9DD2FC0053B2F2 /* Dropbox Media Viewer */,
 				8415C9DA2A9DD3040053B2F2 /* Dropbox Media ViewerTests */,
 				8415C9E42A9DD3040053B2F2 /* Dropbox Media ViewerUITests */,
-				84B242602AA6288300255CE6 /* PW */,
 				8415C9BF2A9DD2FC0053B2F2 /* Products */,
 				3252CB0715AB4ECD1BC44032 /* Pods */,
 				D0B4C6141333FE1B488FA9CF /* Frameworks */,
@@ -300,7 +278,6 @@
 				8415C9BE2A9DD2FC0053B2F2 /* Dropbox Media Viewer.app */,
 				8415C9D72A9DD3040053B2F2 /* Dropbox Media ViewerTests.xctest */,
 				8415C9E12A9DD3040053B2F2 /* Dropbox Media ViewerUITests.xctest */,
-				84B2425F2AA6288300255CE6 /* PW.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -570,15 +547,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		84B242602AA6288300255CE6 /* PW */ = {
-			isa = PBXGroup;
-			children = (
-				84B242612AA6288300255CE6 /* NotificationService.swift */,
-				8408723B2AA8F395009CA0C0 /* Info.plist */,
-			);
-			path = PW;
-			sourceTree = "<group>";
-		};
 		D0B4C6141333FE1B488FA9CF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -606,11 +574,10 @@
 			buildRules = (
 			);
 			dependencies = (
-				84B242652AA6288300255CE6 /* PBXTargetDependency */,
 			);
 			name = "Dropbox Media Viewer";
 			packageProductDependencies = (
-				84B242592AA6279500255CE6 /* Pushwoosh */,
+				840872402AA8F7B3009CA0C0 /* Pushwoosh */,
 			);
 			productName = "Dropbox Media Viewer";
 			productReference = 8415C9BE2A9DD2FC0053B2F2 /* Dropbox Media Viewer.app */;
@@ -655,23 +622,6 @@
 			productReference = 8415C9E12A9DD3040053B2F2 /* Dropbox Media ViewerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		84B2425E2AA6288300255CE6 /* PW */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 84B242672AA6288400255CE6 /* Build configuration list for PBXNativeTarget "PW" */;
-			buildPhases = (
-				84B2425B2AA6288300255CE6 /* Sources */,
-				84B2425C2AA6288300255CE6 /* Frameworks */,
-				84B2425D2AA6288300255CE6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = PW;
-			productName = PW;
-			productReference = 84B2425F2AA6288300255CE6 /* PW.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -693,9 +643,6 @@
 						CreatedOnToolsVersion = 14.1;
 						TestTargetID = 8415C9BD2A9DD2FC0053B2F2;
 					};
-					84B2425E2AA6288300255CE6 = {
-						CreatedOnToolsVersion = 14.1;
-					};
 				};
 			};
 			buildConfigurationList = 8415C9B92A9DD2FC0053B2F2 /* Build configuration list for PBXProject "Dropbox Media Viewer" */;
@@ -708,7 +655,7 @@
 			);
 			mainGroup = 8415C9B52A9DD2FC0053B2F2;
 			packageReferences = (
-				84B242582AA6279500255CE6 /* XCRemoteSwiftPackageReference "Pushwoosh-XCFramework" */,
+				8408723F2AA8F7B3009CA0C0 /* XCRemoteSwiftPackageReference "Pushwoosh-XCFramework" */,
 			);
 			productRefGroup = 8415C9BF2A9DD2FC0053B2F2 /* Products */;
 			projectDirPath = "";
@@ -717,7 +664,6 @@
 				8415C9BD2A9DD2FC0053B2F2 /* Dropbox Media Viewer */,
 				8415C9D62A9DD3040053B2F2 /* Dropbox Media ViewerTests */,
 				8415C9E02A9DD3040053B2F2 /* Dropbox Media ViewerUITests */,
-				84B2425E2AA6288300255CE6 /* PW */,
 			);
 		};
 /* End PBXProject section */
@@ -753,14 +699,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		84B2425D2AA6288300255CE6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8408723C2AA8F395009CA0C0 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -987,14 +925,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		84B2425B2AA6288300255CE6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				84B242622AA6288300255CE6 /* NotificationService.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1007,11 +937,6 @@
 			isa = PBXTargetDependency;
 			target = 8415C9BD2A9DD2FC0053B2F2 /* Dropbox Media Viewer */;
 			targetProxy = 8415C9E22A9DD3040053B2F2 /* PBXContainerItemProxy */;
-		};
-		84B242652AA6288300255CE6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 84B2425E2AA6288300255CE6 /* PW */;
-			targetProxy = 84B242642AA6288300255CE6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1153,7 +1078,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E61E62D2488C1AED8A1F4157 /* Pods-Dropbox Media Viewer.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Dropbox Media Viewer/Dropbox Media Viewer.entitlements";
@@ -1167,7 +1091,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1188,7 +1112,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0B13204487779C15B0C6D2F7 /* Pods-Dropbox Media Viewer.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Dropbox Media Viewer/Dropbox Media Viewer.entitlements";
@@ -1202,7 +1125,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1311,56 +1234,6 @@
 			};
 			name = Release;
 		};
-		84B242682AA6288400255CE6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N4M3759P9C;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PW/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = PW;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Dropbox-Media-Viewer.PW";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		84B242692AA6288400255CE6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N4M3759P9C;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PW/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = PW;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Dropbox-Media-Viewer.PW";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1400,32 +1273,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		84B242672AA6288400255CE6 /* Build configuration list for PBXNativeTarget "PW" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				84B242682AA6288400255CE6 /* Debug */,
-				84B242692AA6288400255CE6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		84B242582AA6279500255CE6 /* XCRemoteSwiftPackageReference "Pushwoosh-XCFramework" */ = {
+		8408723F2AA8F7B3009CA0C0 /* XCRemoteSwiftPackageReference "Pushwoosh-XCFramework" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Pushwoosh/Pushwoosh-XCFramework";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 6.0.0;
+				branch = master;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		84B242592AA6279500255CE6 /* Pushwoosh */ = {
+		840872402AA8F7B3009CA0C0 /* Pushwoosh */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 84B242582AA6279500255CE6 /* XCRemoteSwiftPackageReference "Pushwoosh-XCFramework" */;
+			package = 8408723F2AA8F7B3009CA0C0 /* XCRemoteSwiftPackageReference "Pushwoosh-XCFramework" */;
 			productName = Pushwoosh;
 		};
 /* End XCSwiftPackageProductDependency section */
