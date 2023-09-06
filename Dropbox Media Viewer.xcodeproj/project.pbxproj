@@ -114,6 +114,7 @@
 		84AF0D262AA4DCEA00EBCEAB /* UIImageExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AF0D252AA4DCEA00EBCEAB /* UIImageExt.swift */; };
 		84C04AC32A9E3D8B00F18443 /* UserML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C04AC22A9E3D8B00F18443 /* UserML.swift */; };
 		84C04AC52A9E3F0200F18443 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C04AC42A9E3F0200F18443 /* CacheManager.swift */; };
+		84E2349D2AA90BFB00112817 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84E2349C2AA90BFA00112817 /* Info.plist */; };
 		84F5F4BC2AA24E5100BBEC15 /* UInt64Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F5F4BB2AA24E5100BBEC15 /* UInt64Ext.swift */; };
 		84F5F4BE2AA24F7600BBEC15 /* DateExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F5F4BD2AA24F7600BBEC15 /* DateExt.swift */; };
 		8B2F5891F73F98E9A5C69215 /* Pods_Dropbox_Media_Viewer_Dropbox_Media_ViewerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 322861A2EE544F7E7B607052 /* Pods_Dropbox_Media_Viewer_Dropbox_Media_ViewerUITests.framework */; };
@@ -166,7 +167,6 @@
 		8415C9CB2A9DD2FC0053B2F2 /* Dropbox_Media_Viewer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dropbox_Media_Viewer.xcdatamodel; sourceTree = "<group>"; };
 		8415C9CD2A9DD3030053B2F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8415C9D02A9DD3030053B2F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8415C9D22A9DD3030053B2F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Dropbox Media Viewer/Info/Info.plist"; sourceTree = SOURCE_ROOT; };
 		8415C9D72A9DD3040053B2F2 /* Dropbox Media ViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dropbox Media ViewerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8415C9DB2A9DD3040053B2F2 /* Dropbox_Media_ViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dropbox_Media_ViewerTests.swift; sourceTree = "<group>"; };
 		8415C9E12A9DD3040053B2F2 /* Dropbox Media ViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dropbox Media ViewerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -210,6 +210,7 @@
 		84B242472AA61C5C00255CE6 /* Dropbox Media Viewer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Dropbox Media Viewer.entitlements"; sourceTree = "<group>"; };
 		84C04AC22A9E3D8B00F18443 /* UserML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserML.swift; sourceTree = "<group>"; };
 		84C04AC42A9E3F0200F18443 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		84E2349C2AA90BFA00112817 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84F5F4BB2AA24E5100BBEC15 /* UInt64Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UInt64Ext.swift; sourceTree = "<group>"; };
 		84F5F4BD2AA24F7600BBEC15 /* DateExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExt.swift; sourceTree = "<group>"; };
 		8A0545DFBB8B36A8A9F55F52 /* Pods-Dropbox Media Viewer-Dropbox Media ViewerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dropbox Media Viewer-Dropbox Media ViewerUITests.debug.xcconfig"; path = "Target Support Files/Pods-Dropbox Media Viewer-Dropbox Media ViewerUITests/Pods-Dropbox Media Viewer-Dropbox Media ViewerUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -285,6 +286,7 @@
 		8415C9C02A9DD2FC0053B2F2 /* Dropbox Media Viewer */ = {
 			isa = PBXGroup;
 			children = (
+				84E2349B2AA90BFA00112817 /* Info */,
 				84B242472AA61C5C00255CE6 /* Dropbox Media Viewer.entitlements */,
 				8415C9C12A9DD2FC0053B2F2 /* AppDelegate.swift */,
 				84A61A492A9DD83F000B621B /* AppConfiguration.swift */,
@@ -293,7 +295,6 @@
 				84A61A422A9DD70C000B621B /* View Controllers */,
 				84A61A432A9DD71C000B621B /* API Manager */,
 				84A61A412A9DD6FB000B621B /* Storyboards */,
-				84A61A482A9DD7E2000B621B /* Info */,
 				84A61A452A9DD795000B621B /* Resources */,
 				84A61A472A9DD7D4000B621B /* Core Data */,
 				8415C9CA2A9DD2FC0053B2F2 /* Dropbox_Media_Viewer.xcdatamodeld */,
@@ -419,14 +420,6 @@
 			path = "Core Data";
 			sourceTree = "<group>";
 		};
-		84A61A482A9DD7E2000B621B /* Info */ = {
-			isa = PBXGroup;
-			children = (
-				8415C9D22A9DD3030053B2F2 /* Info.plist */,
-			);
-			path = Info;
-			sourceTree = "<group>";
-		};
 		84A61A4B2A9DDF7E000B621B /* Auth */ = {
 			isa = PBXGroup;
 			children = (
@@ -545,6 +538,14 @@
 				84C04AC22A9E3D8B00F18443 /* UserML.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		84E2349B2AA90BFA00112817 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				84E2349C2AA90BFA00112817 /* Info.plist */,
+			);
+			path = Info;
 			sourceTree = "<group>";
 		};
 		D0B4C6141333FE1B488FA9CF /* Frameworks */ = {
@@ -685,6 +686,7 @@
 				84999BE42AA5E4C000121211 /* ProfileAdditionalInfoTVCell.xib in Resources */,
 				8415C9CE2A9DD3030053B2F2 /* Assets.xcassets in Resources */,
 				8415C9C92A9DD2FC0053B2F2 /* Main.storyboard in Resources */,
+				84E2349D2AA90BFB00112817 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1091,7 +1093,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1125,7 +1127,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
