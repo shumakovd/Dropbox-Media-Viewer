@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>UIBackgroundModes</key>
+    <array>
+        <string>remote-notification</string>
+    </array>
+    
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>dbapi-8-emm</string>
+        <string>dbapi-2</string>
+    </array>
+    
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+    </dict>
+    
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>db-zs9x1sysz05g7kk</string>
+            </array>
+            <key>CFBundleURLName</key>
+            <string></string>
+        </dict>
+    </array>
+    
+    <key>Pushwoosh_APPID</key>
+    <string>853B7-16EF2</string>
+</dict>
+</plist>
